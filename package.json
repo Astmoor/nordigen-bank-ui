@@ -21,7 +21,8 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "watch": "rollup -c -w"
+    "watch": "rollup -c -w",
+    "start": "node server.js"
   },
   "author": "Nordigen Solutions",
   "license": "MIT",
