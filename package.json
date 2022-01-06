@@ -22,7 +22,9 @@
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "start": "node server.js"
+    "start": "node server.js",
+    "heroku-prebuild": "npm i -f",
+    "heroku-postbuild": "npm run build"
   },
   "author": "Nordigen Solutions",
   "license": "MIT",
@@ -34,6 +36,7 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "engines": {
-    "node": "14.x"
+    "node": "14.x",
+    "npm": "7.x"
   }
 }
